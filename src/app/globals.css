@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+:root {
+  --background: #08040f;
+  --foreground: #f5f0ff;
+  --muted-foreground: #a78bca;
+  --card: rgba(255, 255, 255, 0.05);
+  --card-strong: rgba(255, 255, 255, 0.08);
+  --border: rgba(167, 139, 250, 0.15);
+  --accent-from: #e879f9;
+  --accent-to: #7c3aed;
+  --highlight: #f0abfc;
+  --shadow-glow: 0 0 0 1px rgba(167, 139, 250, 0.12), 0 0 30px rgba(139, 92, 246, 0.22);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-strong: var(--card-strong);
+  --color-border: var(--border);
+  --font-sans: "Avenir Next", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "SFMono-Regular", "Consolas", ui-monospace, monospace;
+  --font-brand: var(--font-brand, "Syne", ui-sans-serif);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto; /* Lenis handles smooth scroll — disable CSS scroll-behavior */
+  background:
+    radial-gradient(circle at top, rgba(232, 121, 249, 0.18), transparent 26%),
+    radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.2), transparent 24%),
+    linear-gradient(180deg, #100720 0%, #08040f 45%, #050209 100%);
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(232, 121, 249, 0.09), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(124, 58, 237, 0.09), transparent 20%),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+a,
+button {
+  transition:
+    transform 200ms ease,
+    border-color 200ms ease,
+    background-color 200ms ease,
+    color 200ms ease,
+    box-shadow 200ms ease;
+}
+
+::selection {
+  color: var(--foreground);
+  background: rgba(232, 121, 249, 0.22);
+}
+
+.glass-panel {
+  border: 1px solid rgba(167, 139, 250, 0.15);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
+  box-shadow: var(--shadow-glow);
+  backdrop-filter: blur(24px);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(232, 121, 249, 0.4);
+  box-shadow:
+    0 0 0 1px rgba(232, 121, 249, 0.2),
+    0 20px 60px rgba(0, 0, 0, 0.3),
+    0 0 32px rgba(139, 92, 246, 0.25);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-shell {
+  position: relative;
+  margin-inline: auto;
+  width: min(1120px, calc(100% - 1.5rem));
+}
+
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.6rem;
+  height: 3px;
+  width: 96px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--accent-from), var(--accent-to));
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(167, 139, 250, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(167, 139, 250, 0.06) 1px, transparent 1px);
+  background-size: 70px 70px;
+  mask-image: radial-gradient(circle at center, black 45%, transparent 88%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.title-reveal,
+.section-reveal {
+  opacity: 0;
+}
+
+/* Scroll indicator bounce */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* Glow pulse for ongoing education dot */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(232, 121, 249, 0.5);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 0 8px rgba(232, 121, 249, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

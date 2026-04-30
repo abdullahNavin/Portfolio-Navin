@@ -1,0 +1,15 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="40" fill="#07111C"/>
+  <circle cx="170" cy="160" r="130" fill="#00F5FF" fill-opacity="0.18"/>
+  <circle cx="1000" cy="620" r="180" fill="#0080FF" fill-opacity="0.18"/>
+  <rect x="104" y="96" width="992" height="608" rx="34" fill="url(#paint0_linear_13_3)" fill-opacity="0.25" stroke="white" stroke-opacity="0.12" stroke-width="2"/>
+  <text x="600" y="366" fill="white" font-family="Arial, sans-serif" font-size="148" font-weight="700" text-anchor="middle">DC</text>
+  <text x="600" y="445" fill="#9EB3CC" font-family="Arial, sans-serif" font-size="42" text-anchor="middle">DevConnect</text>
+  <text x="600" y="510" fill="#B8C7D9" font-family="Arial, sans-serif" font-size="28" text-anchor="middle">Replace with actual screenshot</text>
+  <defs>
+    <linearGradient id="paint0_linear_13_3" x1="104" y1="96" x2="1096" y2="704" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00F5FF"/>
+      <stop offset="1" stop-color="#0080FF"/>
+    </linearGradient>
+  </defs>
+</svg>
