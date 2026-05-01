@@ -118,14 +118,14 @@ export const portfolioData: PortfolioData = {
   ],
   projects: [
     {
-      slug: "devlink",
-      name: "DevLink",
-      subtitle: "Developer networking platform for collaboration and visibility.",
+      slug: "ecofy",
+      name: "Ecofy",
+      subtitle: "Ecofy is a community-driven platform to share, vote on, and fund green ideas that make a real difference in the world.",
       description:
-        "A developer networking platform where developers can share their profiles, post code snippets, and connect with other devs.",
+        "Ecofy is a community-driven platform to share, vote on, and fund green ideas that make a real difference in the world.",
       overview: [
-        "DevLink was designed as a community-first platform for developers who want to showcase their work, discover peers, and collaborate on meaningful projects.",
-        "The platform focuses on clean onboarding, profile-driven discovery, and a scalable content model so users can publish projects, build connections, and maintain a professional presence.",
+        "Ecofy is a comprehensive sustainability idea-sharing platform designed to foster community-driven innovation in environmental and social sustainability. The frontend application, built with Next.js 16 and modern web technologies, serves as the user interface for a platform where individuals can discover, share, and monetize sustainable ideas.",
+        "The platform transforms the journey of an idea from concept to impact through three distinct phases. In the initial discovery phase, users can explore a curated feed of green ideas, engage with content through voting and commenting, and build their reputation within the sustainability community. The momentum phase empowers creators to develop their ideas into detailed project proposals, attracting community support and preparing for potential investment.",
       ],
       techStack: [
         "Next.js",
@@ -134,18 +134,18 @@ export const portfolioData: PortfolioData = {
         "Prisma",
         "Tailwind CSS",
       ],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://ecofy-pro.vercel.app/",
+      githubUrl: "https://github.com/abdullahNavin/Ecofy_Frontend",
       challenges: [
-        "Implementing real-time notifications across the feed and profile surfaces.",
+        "Implementing filter system.",
         "Designing a complex relational DB schema that scales cleanly with growing user data.",
       ],
       futurePlans: [
-        "Add real-time messaging and richer notification system.",
-        "Launch a focused job board for developer opportunities.",
+        "Add real-time messaging.",
+        "Add notification system.",
         "Build a mobile companion app.",
       ],
-      image: "/project-devlink.png",
+      image: "/project-ecofy.png",
       initials: "DL",
     },
     {
