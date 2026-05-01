@@ -38,6 +38,7 @@ export function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`Live demo for ${project.name}`}
+                    title={`Live demo for ${project.name}`}
                     className="flex h-11 w-11 items-center justify-center rounded-full bg-fuchsia-400/30 backdrop-blur-sm text-white hover:bg-fuchsia-400/50 transition-colors"
                     onClick={(e) => e.stopPropagation()}
                   >
@@ -47,12 +48,26 @@ export function Projects() {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`GitHub for ${project.name}`}
+                    aria-label={`Frontend GitHub for ${project.name}`}
+                    title={`Frontend GitHub for ${project.name}`}
                     className="flex h-11 w-11 items-center justify-center rounded-full bg-violet-600/30 backdrop-blur-sm text-white hover:bg-violet-600/50 transition-colors"
                     onClick={(e) => e.stopPropagation()}
                   >
                     <FaGithub size={18} />
                   </a>
+                  {project.backendGithubUrl && (
+                    <a
+                      href={project.backendGithubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Backend GitHub for ${project.name}`}
+                      title={`Backend GitHub for ${project.name}`}
+                      className="flex h-11 w-11 items-center justify-center rounded-full bg-slate-600/30 backdrop-blur-sm text-white hover:bg-slate-600/50 transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <FaGithub size={18} />
+                    </a>
+                  )}
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-400/10 to-violet-600/10" />
                 <Image

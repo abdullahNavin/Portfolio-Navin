@@ -94,8 +94,18 @@ export function ProjectDetailView({ project }: ProjectDetailViewProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-violet-400/20 bg-white/5 px-6 py-3 font-semibold text-white transition-all hover:border-fuchsia-300/40"
               >
-                GitHub <FaGithub size={18} />
+                {project.backendGithubUrl ? "Frontend Repo" : "GitHub"} <FaGithub size={18} />
               </a>
+              {project.backendGithubUrl && (
+                <a
+                  href={project.backendGithubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-violet-400/20 bg-white/5 px-6 py-3 font-semibold text-white transition-all hover:border-fuchsia-300/40"
+                >
+                  Backend Repo <FaGithub size={18} />
+                </a>
+              )}
             </div>
           </div>
 

@@ -37,6 +37,7 @@ export type ProjectItem = {
   techStack: string[];
   liveUrl: string;
   githubUrl: string;
+  backendGithubUrl?: string;
   challenges: string[];
   futurePlans: string[];
   image: string;

@@ -12,9 +12,8 @@ type LenisWindow = Window & {
 };
 
 // Heading words with alternating brightness for Athos-style effect
-// Building Modern Web Apps with Clean Code & Clear Purpose
 const headingWords = [
-  { text: "Building", dim: true },
+  { text: "Building", dim: false },
   { text: "Modern", dim: true },
   { text: "Web", dim: false },
   { text: "Apps", dim: false },
@@ -118,7 +117,7 @@ export function Hero() {
         <div className="absolute inset-0 rounded-full bg-gradient-to-br from-fuchsia-400/40 to-violet-700/30 blur-xl scale-110" />
 
         {/* Avatar circle */}
-        <div className="relative h-28 w-28 overflow-hidden rounded-full border-2 border-fuchsia-400/40 shadow-[0_0_40px_rgba(168,85,247,0.35)]">
+        <div className="relative h-40 w-40 overflow-hidden rounded-full border-2 border-fuchsia-400/40 shadow-[0_0_40px_rgba(168,85,247,0.35)]">
           <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-400/20 to-violet-700/20" />
           <Image
             src={portfolioData.profileImage}
@@ -145,7 +144,7 @@ export function Hero() {
       {/* ── Heading ── */}
       <h1
         className="mt-6 max-w-3xl text-center font-extrabold leading-[1.12] tracking-tight"
-        style={{ fontSize: "clamp(2.8rem, 6vw, 5.5rem)" }}
+        style={{ fontSize: "clamp(2.4rem, 5.2vw, 4.9rem)" }}
         aria-label="Designed to Build & Ship Modern Web Apps"
       >
         {headingWords.map((word, i) => (
