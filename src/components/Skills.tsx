@@ -17,6 +17,7 @@ import {
   SiPrisma,
   SiTailwindcss,
   SiTypescript,
+  SiExpress,
 } from "react-icons/si";
 import { DatabaseZap } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -34,6 +35,7 @@ const iconMap = {
   mongodb: SiMongodb,
   postgresql: SiPostgresql,
   prisma: SiPrisma,
+  expressjs: SiExpress,
   default: DatabaseZap,
 };
 
@@ -53,6 +55,7 @@ const skillsData = [
     title: "Backend",
     items: [
       { name: "Node.js", level: 91, icon: "nodejs" },
+      { name: "Express.js", level: 91, icon: "expressjs" },
       { name: "MongoDB", level: 88, icon: "mongodb" },
       { name: "PostgreSQL", level: 87, icon: "postgresql" },
       { name: "Prisma", level: 90, icon: "prisma" },
@@ -215,11 +218,10 @@ export function Skills() {
                               return (
                                 <span
                                   key={`${skill.name}-${dot}`}
-                                  className={`h-1.5 flex-1 rounded-full transition-all duration-500 ${
-                                    isFilled
-                                      ? "bg-gradient-to-r from-[#e040fb] to-[#7c3aed]"
-                                      : "bg-[#2a2a3a]"
-                                  }`}
+                                  className={`h-1.5 flex-1 rounded-full transition-all duration-500 ${isFilled
+                                    ? "bg-gradient-to-r from-[#e040fb] to-[#7c3aed]"
+                                    : "bg-[#2a2a3a]"
+                                    }`}
                                 />
                               );
                             })}

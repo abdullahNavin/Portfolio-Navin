@@ -25,22 +25,22 @@ export const portfolioData: PortfolioData = {
   socialLinks: [
     {
       label: "GitHub",
-      href: "https://github.com/navindummy",
+      href: "https://github.com/abdullahNavin",
       icon: "github",
     },
     {
       label: "LinkedIn",
-      href: "https://linkedin.com/in/navindummy",
+      href: "https://www.linkedin.com/in/navin-26-3-navin/",
       icon: "linkedin",
     },
     {
       label: "Twitter/X",
-      href: "https://twitter.com/navindummy",
+      href: "https://x.com/fayedHp",
       icon: "twitter",
     },
     {
       label: "Facebook",
-      href: "https://facebook.com/navindummy",
+      href: "https://www.facebook.com/abdullah.fayed.940",
       icon: "facebook",
     },
   ],
