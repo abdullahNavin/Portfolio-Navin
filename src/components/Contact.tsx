@@ -100,7 +100,7 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="glass-panel rounded-[2rem] p-6 sm:p-8"
+            className="glass-panel rounded-4xl p-6 sm:p-8"
           >
             <AnimatePresence mode="wait">
               {formState === "success" ? (
@@ -109,7 +109,7 @@ export function Contact() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
-                  className="flex min-h-[320px] flex-col items-center justify-center gap-5 text-center"
+                  className="flex min-h-80 flex-col items-center justify-center gap-5 text-center"
                 >
                   <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-fuchsia-400/20 to-violet-600/20">
                     <motion.div
@@ -143,7 +143,7 @@ export function Contact() {
                   </label>
                   <label className="block">
                     <span className="mb-2 block text-sm text-slate-400">Message *</span>
-                    <textarea required rows={6} className={`${inputCls} resize-none rounded-[1.5rem]`} placeholder="Tell me a bit about what you're building." />
+                    <textarea required rows={6} className={`${inputCls} resize-none rounded-3xl`} placeholder="Tell me a bit about what you're building." />
                   </label>
                   <button
                     type="submit"
