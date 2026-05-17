@@ -48,7 +48,7 @@ export const portfolioData: PortfolioData = {
     title: "Passionate developer, lifelong learner.",
     paragraphs: [
       "I'm Abdullah Al Fayed Navin, a Full Stack Developer from Chittagong, Bangladesh. My journey into programming started with curiosity and has evolved into a deep passion for building things that live on the internet. I love crafting elegant solutions to complex problems, whether it's designing a pixel-perfect UI or architecting a robust backend API.",
-      "Beyond code, I'm a history enthusiast — currently pursuing a Bachelor's in History, which gives me a unique perspective on problem-solving and storytelling. When I'm not coding, you'll find me exploring new technologies, reading, or playing football with friends.",
+      "Beyond code, I'm a history enthusiast — currently pursuing a Bachelor's in History, which gives me a unique perspective on problem-solving and storytelling. When I'm not coding, you'll find me exploring new technologies, reading, or traveling with friends.",
     ],
     stats: [
       { label: "Projects Completed", value: 3, suffix: "+" },
